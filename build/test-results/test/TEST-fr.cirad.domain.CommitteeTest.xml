@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="fr.cirad.domain.CommitteeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-08-23T11:12:47" hostname="zpaul" time="0.006">
+  <properties/>
+  <testcase name="metMinimumAssignmentsByPersonTypeTest()" classname="fr.cirad.domain.CommitteeTest" time="0.006"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

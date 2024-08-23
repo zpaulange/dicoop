@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="fr.cirad.domain.CommitteeSolutionTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-08-23T11:12:47" hostname="zpaul" time="0.706">
+  <properties/>
+  <testcase name="constraintsTest()" classname="fr.cirad.domain.CommitteeSolutionTest" time="0.706"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Aug 23, 2024 12:12:47 PM io.quarkus.bootstrap.runner.Timing printStartupTime
+INFO: dicoop 1.13.0 on JVM (powered by Quarkus 2.13.3.Final) started in 2.545s. Listening on: http://localhost:8090
+Aug 23, 2024 12:12:47 PM io.quarkus.bootstrap.runner.Timing printStartupTime
+INFO: Profile test activated. 
+Aug 23, 2024 12:12:47 PM io.quarkus.bootstrap.runner.Timing printStartupTime
+INFO: Installed features: [awt, cdi, optaplanner, optaplanner-benchmark, resteasy, resteasy-jackson, smallrye-context-propagation, smallrye-openapi, swagger-ui, vertx]
+]]></system-err>
+</testsuite>
