@@ -1,0 +1,55 @@
+plugins {
+    id 'java'
+    id 'io.quarkus'
+    id 'org.siouan.frontend-jdk11'
+}
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+dependencies {
+    implementation enforcedPlatform("${quarkusPlatformGroupId}:${quarkusPlatformArtifactId}:${quarkusPlatformVersion}")
+    implementation enforcedPlatform("${quarkusPlatformGroupId}:quarkus-optaplanner-bom:${quarkusPlatformVersion}")
+    implementation 'org.optaplanner:optaplanner-quarkus'
+    implementation 'io.quarkus:quarkus-smallrye-openapi'
+    implementation 'io.quarkus:quarkus-resteasy'
+    implementation 'io.quarkus:quarkus-resteasy-jackson'
+    implementation 'io.quarkus:quarkus-arc'
+    implementation 'net.jodah:expiringmap:0.5.10'
+    implementation 'com.google.guava:guava:31.1-jre'
+
+    testImplementation 'io.quarkus:quarkus-junit5'
+    testImplementation 'io.rest-assured:rest-assured'
+    testImplementation 'org.optaplanner:optaplanner-test'
+    testImplementation 'org.optaplanner:optaplanner-quarkus-benchmark'
+}
+
+configurations.implementation {
+    exclude group: 'org.optaplanner', module: 'optaplanner-constraint-drl'
+    exclude group: 'org.optaplanner', module: 'optaplanner-constraint-streams-drools'
+}
+
+group 'fr.cirad'
+version '1.13.0'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+}
+
+compileJava {
+    options.encoding = 'UTF-8'
+    options.compilerArgs << '-parameters'
+}
+
+compileTestJava {
+    options.encoding = 'UTF-8'
+}
+
+frontend {
+    nodeVersion = '16.16.0'
+    packageJsonDirectory = file('./src/main/webapp')
+    assembleScript = 'run prod'
+}

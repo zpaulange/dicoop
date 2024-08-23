@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    overflow-x: hidden;
+}
+
+.dicoop-logo {
+    height: 100%;
+    width: auto;
+}
+
+.dicoop-title {
+    margin: 0;
+    padding: 10px;
+    /*font-family: Georgia, 'Times New Roman', Times, serif;*/
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.dicoop-title h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 916px) {
+    .mantine-nsdj{
+        display: block;
+    }
+    .mantine-1a6i1ew{
+        max-width: 100%;
+    }
+    .mantine-1a6i1ew .mantine-InputWrapper-root{
+        width: 100%;
+    }
+}
